@@ -1,0 +1,101 @@
+mkdir SDP-SGA2-gitworkflow
+Make directory 
+
+cd SDP-SGA2-gitworkflow
+Change directory 
+
+touch index.html about.html
+Create both the html files
+
+ls
+Look at what is in the directory
+
+git init
+Initialise git repo
+
+git add *
+Add all unstaged files to staging
+
+git commit -m "created html files"
+Commit the changes to the git repo
+
+vim index.html
+Command line text editor vim
+
+git status
+Check for unstaged files
+ 
+git add *
+Add all unstaged files to staging
+
+git commit -m "updated index.html"
+Commit changes to repo
+
+git branch "feature"
+Create feature branch
+
+git checkout "feature"
+Switch branch to feature branch
+
+vim about.html
+Text edit
+
+git add *
+Add unstaged files to staging
+
+git status
+Check staged files
+
+git commit -m "updated about.html"
+Commit changes to repo
+
+git checkout "main"
+Switch branch to main
+
+git merge feature
+Merge feature branch into main branch
+
+git log --oneline
+Show commits in one line each
+
+touch .gitignore
+Create gitignore file
+
+vim .gitignore 
+Text edit
+
+git add .gitignore
+Stage the gitignore file
+
+git commit -m "added gitignore"
+Commit it to the repo
+
+echo "Temporary addition" >> index.html
+Add in the text into index html
+
+git add index.html
+Stage index.html
+
+git commit -m "addition to index.html to test undo"
+Commit changes to repo
+
+git reset --hard HEAD~1
+Remove commit as well as changes made to the file
+
+git log --oneline
+Show commits in one line each
+
+git remote add origin git@github.com:js-6951/SDP-SGA2-gitworkflow.git
+Link origin git repo from GitHub 
+
+git push --all origin
+Push all branches and commits to GitHub repo
+
+touch git_commands.txt
+Create txt file
+
+git add *
+Add all unstaged files to staging
+
+git commit -m "added git_commands.txt"
+Commit changes to repo
